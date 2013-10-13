@@ -1,0 +1,9 @@
+﻿Build started 2013-10-13 오후 6:12:00.
+     1>Project "D:\sunqueen\mytest\vlcwin\vlc-2.1.0.old\vlc-2.1.0.oldlib.2010.up\libvlc\libvlc.vcxproj" on node 3 (clean target(s)).
+     1>_PrepareForClean:
+         Deleting file "Debug\libvlc.lastbuildstate".
+     1>Done Building Project "D:\sunqueen\mytest\vlcwin\vlc-2.1.0.old\vlc-2.1.0.oldlib.2010.up\libvlc\libvlc.vcxproj" (clean target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.02
