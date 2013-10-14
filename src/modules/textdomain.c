@@ -104,7 +104,7 @@ int vlc_bindtextdomain (const char *domain)
 char *vlc_gettext (const char *msgid)
 {
 #ifdef ENABLE_NLS
-    if (likely(msgid))			// sunqueen modify
+    if (likely(*msgid))
 	    return cover_dgettext (PACKAGE_NAME, msgid);			// sunqueen modify
 #endif
     return (char *)msgid;
