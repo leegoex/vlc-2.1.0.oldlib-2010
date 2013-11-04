@@ -473,7 +473,7 @@ static bool IsTarga(stream_t *s)
 typedef struct {
     vlc_fourcc_t  codec;
     int           marker_size;
-    const uint8_t marker[14];
+    /*const*/ uint8_t marker[14];			// sunqueen modify
     bool          (*detect)(stream_t *s);
 } image_format_t;
 

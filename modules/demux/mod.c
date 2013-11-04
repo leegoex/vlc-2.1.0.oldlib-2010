@@ -444,7 +444,7 @@ static int Validate( demux_t *p_demux, const char *psz_ext )
     static const struct
     {
         int i_offset;
-        const char *psz_marker;
+        /*const*/ char *psz_marker;			// sunqueen modify
     } p_marker[] = {
         {  0, "ziRCONia" },             /* MMCMP files */
         {  0, "Extended Module" },      /* XM */

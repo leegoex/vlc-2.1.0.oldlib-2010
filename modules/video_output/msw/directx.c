@@ -1443,11 +1443,11 @@ static BOOL WINAPI DirectXEnumCallback2(GUID *guid, LPTSTR desc,
     ctx->values = (char **)xrealloc(ctx->values, (ctx->count + 1) * sizeof(char *));			// sunqueen modify
     ctx->descs = (char **)xrealloc(ctx->descs, (ctx->count + 1) * sizeof(char *));			// sunqueen modify
 
-    ctx->values[ctx->count] = psz_drivername;
+    ctx->values[ctx->count] = strdup(drivername);	//psz_drivername;			// sunqueen modify
     ctx->descs[ctx->count] = psz_drivername;
     ctx->count++;
 
-    free(psz_drivername);
+    //free(psz_drivername);			// sunqueen delete
     return TRUE; /* Keep enumerating */
 }
 
